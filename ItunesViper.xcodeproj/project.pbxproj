@@ -8,10 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		AEC3AA1D201398030017769F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA1C201398030017769F /* AppDelegate.swift */; };
-		AEC3AA1F201398030017769F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA1E201398030017769F /* ViewController.swift */; };
-		AEC3AA22201398030017769F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA20201398030017769F /* Main.storyboard */; };
 		AEC3AA24201398030017769F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA23201398030017769F /* Assets.xcassets */; };
 		AEC3AA27201398030017769F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA25201398030017769F /* LaunchScreen.storyboard */; };
+		AEC3AA3020139A1E0017769F /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA2F20139A1E0017769F /* AppConstants.swift */; };
+		AEC3AA3220139A300017769F /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA3120139A300017769F /* AppRouter.swift */; };
+		AEC3AA372013A9660017769F /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA362013A9660017769F /* AppNavigation.swift */; };
+		AEC3AA3A2013AB9C0017769F /* ArtistSearchContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA392013AB9C0017769F /* ArtistSearchContract.swift */; };
+		AEC3AA3C2013AC870017769F /* ArtistSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA3B2013AC870017769F /* ArtistSearchInteractor.swift */; };
+		AEC3AA3E2013ADAE0017769F /* ArtistSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA3D2013ADAE0017769F /* ArtistSearchPresenter.swift */; };
+		AEC3AA402013AE250017769F /* ArtistSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA3F2013AE250017769F /* ArtistSearchRouter.swift */; };
+		AEC3AA422013AE800017769F /* ArtistSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA412013AE800017769F /* ArtistSearchVC.swift */; };
+		AEC3AA452013AED50017769F /* ArtistSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA442013AED50017769F /* ArtistSearchView.xib */; };
 		CAA82BB1252BDF085E722D7F /* Pods_ItunesViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA7995B9D85946CA5D991A5 /* Pods_ItunesViper.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +28,18 @@
 		775FDB8EAAEB18791BB8879C /* Pods-ItunesViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesViper.release.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesViper/Pods-ItunesViper.release.xcconfig"; sourceTree = "<group>"; };
 		AEC3AA19201398030017769F /* ItunesViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC3AA1C201398030017769F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AEC3AA1E201398030017769F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AEC3AA21201398030017769F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEC3AA23201398030017769F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEC3AA26201398030017769F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEC3AA28201398030017769F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEC3AA2F20139A1E0017769F /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		AEC3AA3120139A300017769F /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		AEC3AA362013A9660017769F /* AppNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigation.swift; sourceTree = "<group>"; };
+		AEC3AA392013AB9C0017769F /* ArtistSearchContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistSearchContract.swift; sourceTree = "<group>"; };
+		AEC3AA3B2013AC870017769F /* ArtistSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistSearchInteractor.swift; sourceTree = "<group>"; };
+		AEC3AA3D2013ADAE0017769F /* ArtistSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistSearchPresenter.swift; sourceTree = "<group>"; };
+		AEC3AA3F2013AE250017769F /* ArtistSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistSearchRouter.swift; sourceTree = "<group>"; };
+		AEC3AA412013AE800017769F /* ArtistSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistSearchVC.swift; sourceTree = "<group>"; };
+		AEC3AA442013AED50017769F /* ArtistSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistSearchView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +92,69 @@
 		AEC3AA1B201398030017769F /* ItunesViper */ = {
 			isa = PBXGroup;
 			children = (
-				AEC3AA1C201398030017769F /* AppDelegate.swift */,
-				AEC3AA1E201398030017769F /* ViewController.swift */,
-				AEC3AA20201398030017769F /* Main.storyboard */,
-				AEC3AA23201398030017769F /* Assets.xcassets */,
-				AEC3AA25201398030017769F /* LaunchScreen.storyboard */,
-				AEC3AA28201398030017769F /* Info.plist */,
+				AEC3AA2E201399C70017769F /* Application */,
+				AEC3AA352013A90E0017769F /* Modules */,
+				AEC3AA3320139A690017769F /* Resources */,
 			);
 			path = ItunesViper;
+			sourceTree = "<group>";
+		};
+		AEC3AA2E201399C70017769F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AEC3AA3420139A9A0017769F /* Commons */,
+				AEC3AA1C201398030017769F /* AppDelegate.swift */,
+				AEC3AA2F20139A1E0017769F /* AppConstants.swift */,
+				AEC3AA3120139A300017769F /* AppRouter.swift */,
+				AEC3AA362013A9660017769F /* AppNavigation.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		AEC3AA3320139A690017769F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AEC3AA23201398030017769F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AEC3AA3420139A9A0017769F /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				AEC3AA28201398030017769F /* Info.plist */,
+				AEC3AA25201398030017769F /* LaunchScreen.storyboard */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		AEC3AA352013A90E0017769F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AEC3AA382013A9BA0017769F /* ArtistSearch */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AEC3AA382013A9BA0017769F /* ArtistSearch */ = {
+			isa = PBXGroup;
+			children = (
+				AEC3AA432013AEBF0017769F /* Views */,
+				AEC3AA392013AB9C0017769F /* ArtistSearchContract.swift */,
+				AEC3AA3B2013AC870017769F /* ArtistSearchInteractor.swift */,
+				AEC3AA3D2013ADAE0017769F /* ArtistSearchPresenter.swift */,
+				AEC3AA3F2013AE250017769F /* ArtistSearchRouter.swift */,
+				AEC3AA412013AE800017769F /* ArtistSearchVC.swift */,
+			);
+			path = ArtistSearch;
+			sourceTree = "<group>";
+		};
+		AEC3AA432013AEBF0017769F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AEC3AA442013AED50017769F /* ArtistSearchView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +220,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEC3AA27201398030017769F /* LaunchScreen.storyboard in Resources */,
+				AEC3AA452013AED50017769F /* ArtistSearchView.xib in Resources */,
 				AEC3AA24201398030017769F /* Assets.xcassets in Resources */,
-				AEC3AA22201398030017769F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,22 +283,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEC3AA1F201398030017769F /* ViewController.swift in Sources */,
 				AEC3AA1D201398030017769F /* AppDelegate.swift in Sources */,
+				AEC3AA402013AE250017769F /* ArtistSearchRouter.swift in Sources */,
+				AEC3AA3C2013AC870017769F /* ArtistSearchInteractor.swift in Sources */,
+				AEC3AA3020139A1E0017769F /* AppConstants.swift in Sources */,
+				AEC3AA3220139A300017769F /* AppRouter.swift in Sources */,
+				AEC3AA422013AE800017769F /* ArtistSearchVC.swift in Sources */,
+				AEC3AA3A2013AB9C0017769F /* ArtistSearchContract.swift in Sources */,
+				AEC3AA372013A9660017769F /* AppNavigation.swift in Sources */,
+				AEC3AA3E2013ADAE0017769F /* ArtistSearchPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AEC3AA20201398030017769F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AEC3AA21201398030017769F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AEC3AA25201398030017769F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -355,13 +423,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SWYA59BA6P;
-				INFOPLIST_FILE = ItunesViper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ItunesViper/Application/Commons/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cl.mzapatae.ItunesViper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -372,13 +440,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SWYA59BA6P;
-				INFOPLIST_FILE = ItunesViper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ItunesViper/Application/Commons/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cl.mzapatae.ItunesViper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
