@@ -20,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
 
   func configureInitialVC() {
-    
+    window = UIWindow(frame: UIScreen.main.bounds)
+    AppRouter().setupRootScreen(in: window!)
   }
   
   func applicationWillResignActive(_ application: UIApplication) {
