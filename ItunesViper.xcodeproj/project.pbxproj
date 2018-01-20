@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AEC3AA1D201398030017769F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA1C201398030017769F /* AppDelegate.swift */; };
+		AEC3AA1F201398030017769F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA1E201398030017769F /* ViewController.swift */; };
+		AEC3AA22201398030017769F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA20201398030017769F /* Main.storyboard */; };
+		AEC3AA24201398030017769F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA23201398030017769F /* Assets.xcassets */; };
+		AEC3AA27201398030017769F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA25201398030017769F /* LaunchScreen.storyboard */; };
+		CAA82BB1252BDF085E722D7F /* Pods_ItunesViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA7995B9D85946CA5D991A5 /* Pods_ItunesViper.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EA7995B9D85946CA5D991A5 /* Pods_ItunesViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItunesViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A6437881DC07533176A97C6 /* Pods-ItunesViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesViper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesViper/Pods-ItunesViper.debug.xcconfig"; sourceTree = "<group>"; };
+		775FDB8EAAEB18791BB8879C /* Pods-ItunesViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesViper.release.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesViper/Pods-ItunesViper.release.xcconfig"; sourceTree = "<group>"; };
+		AEC3AA19201398030017769F /* ItunesViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC3AA1C201398030017769F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AEC3AA1E201398030017769F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEC3AA21201398030017769F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AEC3AA23201398030017769F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEC3AA26201398030017769F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AEC3AA28201398030017769F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEC3AA16201398030017769F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAA82BB1252BDF085E722D7F /* Pods_ItunesViper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21B80E86F672EC04D8B1CD0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EA7995B9D85946CA5D991A5 /* Pods_ItunesViper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75320725D3AE18CA615FC651 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A6437881DC07533176A97C6 /* Pods-ItunesViper.debug.xcconfig */,
+				775FDB8EAAEB18791BB8879C /* Pods-ItunesViper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AEC3AA10201398030017769F = {
+			isa = PBXGroup;
+			children = (
+				AEC3AA1B201398030017769F /* ItunesViper */,
+				AEC3AA1A201398030017769F /* Products */,
+				75320725D3AE18CA615FC651 /* Pods */,
+				21B80E86F672EC04D8B1CD0C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AEC3AA1A201398030017769F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEC3AA19201398030017769F /* ItunesViper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEC3AA1B201398030017769F /* ItunesViper */ = {
+			isa = PBXGroup;
+			children = (
+				AEC3AA1C201398030017769F /* AppDelegate.swift */,
+				AEC3AA1E201398030017769F /* ViewController.swift */,
+				AEC3AA20201398030017769F /* Main.storyboard */,
+				AEC3AA23201398030017769F /* Assets.xcassets */,
+				AEC3AA25201398030017769F /* LaunchScreen.storyboard */,
+				AEC3AA28201398030017769F /* Info.plist */,
+			);
+			path = ItunesViper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEC3AA18201398030017769F /* ItunesViper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC3AA2B201398030017769F /* Build configuration list for PBXNativeTarget "ItunesViper" */;
+			buildPhases = (
+				8539ADE158F2187D9C3641A3 /* [CP] Check Pods Manifest.lock */,
+				AEC3AA15201398030017769F /* Sources */,
+				AEC3AA16201398030017769F /* Frameworks */,
+				AEC3AA17201398030017769F /* Resources */,
+				B7F33754212CBF09C6FAD797 /* [CP] Embed Pods Frameworks */,
+				1ECA12090CB84B8721D5FBD7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ItunesViper;
+			productName = ItunesViper;
+			productReference = AEC3AA19201398030017769F /* ItunesViper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEC3AA11201398030017769F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Miguel A. Zapata";
+				TargetAttributes = {
+					AEC3AA18201398030017769F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AEC3AA14201398030017769F /* Build configuration list for PBXProject "ItunesViper" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEC3AA10201398030017769F;
+			productRefGroup = AEC3AA1A201398030017769F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEC3AA18201398030017769F /* ItunesViper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEC3AA17201398030017769F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC3AA27201398030017769F /* LaunchScreen.storyboard in Resources */,
+				AEC3AA24201398030017769F /* Assets.xcassets in Resources */,
+				AEC3AA22201398030017769F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1ECA12090CB84B8721D5FBD7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ItunesViper/Pods-ItunesViper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8539ADE158F2187D9C3641A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ItunesViper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7F33754212CBF09C6FAD797 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ItunesViper/Pods-ItunesViper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEC3AA15201398030017769F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC3AA1F201398030017769F /* ViewController.swift in Sources */,
+				AEC3AA1D201398030017769F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AEC3AA20201398030017769F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEC3AA21201398030017769F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AEC3AA25201398030017769F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEC3AA26201398030017769F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEC3AA29201398030017769F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AEC3AA2A201398030017769F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEC3AA2C201398030017769F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A6437881DC07533176A97C6 /* Pods-ItunesViper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SWYA59BA6P;
+				INFOPLIST_FILE = ItunesViper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cl.mzapatae.ItunesViper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEC3AA2D201398030017769F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 775FDB8EAAEB18791BB8879C /* Pods-ItunesViper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SWYA59BA6P;
+				INFOPLIST_FILE = ItunesViper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cl.mzapatae.ItunesViper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEC3AA14201398030017769F /* Build configuration list for PBXProject "ItunesViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC3AA29201398030017769F /* Debug */,
+				AEC3AA2A201398030017769F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEC3AA2B201398030017769F /* Build configuration list for PBXNativeTarget "ItunesViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC3AA2C201398030017769F /* Debug */,
+				AEC3AA2D201398030017769F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEC3AA11201398030017769F /* Project object */;
+}
