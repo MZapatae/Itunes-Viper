@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AEC3AA1D201398030017769F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA1C201398030017769F /* AppDelegate.swift */; };
-		AEC3AA1F201398030017769F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA1E201398030017769F /* ViewController.swift */; };
-		AEC3AA22201398030017769F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA20201398030017769F /* Main.storyboard */; };
 		AEC3AA24201398030017769F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA23201398030017769F /* Assets.xcassets */; };
 		AEC3AA27201398030017769F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA25201398030017769F /* LaunchScreen.storyboard */; };
+		AEC3AA3020139A1E0017769F /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA2F20139A1E0017769F /* AppConstants.swift */; };
+		AEC3AA3220139A300017769F /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA3120139A300017769F /* AppRouter.swift */; };
 		CAA82BB1252BDF085E722D7F /* Pods_ItunesViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA7995B9D85946CA5D991A5 /* Pods_ItunesViper.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +21,11 @@
 		775FDB8EAAEB18791BB8879C /* Pods-ItunesViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesViper.release.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesViper/Pods-ItunesViper.release.xcconfig"; sourceTree = "<group>"; };
 		AEC3AA19201398030017769F /* ItunesViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC3AA1C201398030017769F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AEC3AA1E201398030017769F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AEC3AA21201398030017769F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEC3AA23201398030017769F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEC3AA26201398030017769F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEC3AA28201398030017769F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEC3AA2F20139A1E0017769F /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		AEC3AA3120139A300017769F /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +78,38 @@
 		AEC3AA1B201398030017769F /* ItunesViper */ = {
 			isa = PBXGroup;
 			children = (
-				AEC3AA1C201398030017769F /* AppDelegate.swift */,
-				AEC3AA1E201398030017769F /* ViewController.swift */,
-				AEC3AA20201398030017769F /* Main.storyboard */,
-				AEC3AA23201398030017769F /* Assets.xcassets */,
-				AEC3AA25201398030017769F /* LaunchScreen.storyboard */,
-				AEC3AA28201398030017769F /* Info.plist */,
+				AEC3AA2E201399C70017769F /* Application */,
+				AEC3AA3320139A690017769F /* Resources */,
 			);
 			path = ItunesViper;
+			sourceTree = "<group>";
+		};
+		AEC3AA2E201399C70017769F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AEC3AA3420139A9A0017769F /* Commons */,
+				AEC3AA1C201398030017769F /* AppDelegate.swift */,
+				AEC3AA2F20139A1E0017769F /* AppConstants.swift */,
+				AEC3AA3120139A300017769F /* AppRouter.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		AEC3AA3320139A690017769F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AEC3AA23201398030017769F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AEC3AA3420139A9A0017769F /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				AEC3AA28201398030017769F /* Info.plist */,
+				AEC3AA25201398030017769F /* LaunchScreen.storyboard */,
+			);
+			path = Commons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +176,6 @@
 			files = (
 				AEC3AA27201398030017769F /* LaunchScreen.storyboard in Resources */,
 				AEC3AA24201398030017769F /* Assets.xcassets in Resources */,
-				AEC3AA22201398030017769F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,22 +237,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEC3AA1F201398030017769F /* ViewController.swift in Sources */,
 				AEC3AA1D201398030017769F /* AppDelegate.swift in Sources */,
+				AEC3AA3020139A1E0017769F /* AppConstants.swift in Sources */,
+				AEC3AA3220139A300017769F /* AppRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AEC3AA20201398030017769F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AEC3AA21201398030017769F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AEC3AA25201398030017769F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -355,13 +371,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SWYA59BA6P;
-				INFOPLIST_FILE = ItunesViper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ItunesViper/Application/Commons/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cl.mzapatae.ItunesViper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -372,13 +388,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SWYA59BA6P;
-				INFOPLIST_FILE = ItunesViper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ItunesViper/Application/Commons/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cl.mzapatae.ItunesViper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
