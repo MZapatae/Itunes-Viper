@@ -19,5 +19,22 @@ class ArtistSearchVC: UIViewController {
 
 extension ArtistSearchVC: ArtistSearchView {
   
+  func showLoadingIndicator() {
+    //code...
+  }
+  
+  func hideLoadingIndicator() {
+    //code...
+  }
+  
+  func showSearchResults(_ artists: [Artist]) {
+    //code...
+  }
+  
+  func showSearchNoResultsScreen() {
+    //code...
+  }
+  
+  
   
 }

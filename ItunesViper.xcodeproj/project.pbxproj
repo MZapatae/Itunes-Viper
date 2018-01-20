@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEA1E3E62013EA74005A9AD4 /* ResultsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3E52013EA74005A9AD4 /* ResultsResponse.swift */; };
+		AEA1E3E92013EF29005A9AD4 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3E82013EF29005A9AD4 /* Artist.swift */; };
 		AEC3AA1D201398030017769F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA1C201398030017769F /* AppDelegate.swift */; };
 		AEC3AA24201398030017769F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA23201398030017769F /* Assets.xcassets */; };
 		AEC3AA27201398030017769F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA25201398030017769F /* LaunchScreen.storyboard */; };
@@ -26,6 +28,8 @@
 		0EA7995B9D85946CA5D991A5 /* Pods_ItunesViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItunesViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6437881DC07533176A97C6 /* Pods-ItunesViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesViper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesViper/Pods-ItunesViper.debug.xcconfig"; sourceTree = "<group>"; };
 		775FDB8EAAEB18791BB8879C /* Pods-ItunesViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesViper.release.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesViper/Pods-ItunesViper.release.xcconfig"; sourceTree = "<group>"; };
+		AEA1E3E52013EA74005A9AD4 /* ResultsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsResponse.swift; sourceTree = "<group>"; };
+		AEA1E3E82013EF29005A9AD4 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		AEC3AA19201398030017769F /* ItunesViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC3AA1C201398030017769F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEC3AA23201398030017769F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +75,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AEA1E3E32013EA0D005A9AD4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				AEA1E3E82013EF29005A9AD4 /* Artist.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		AEA1E3E42013EA20005A9AD4 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				AEA1E3E72013EBF1005A9AD4 /* ResponseModel */,
+				AEA1E3E32013EA0D005A9AD4 /* Entities */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		AEA1E3E72013EBF1005A9AD4 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				AEA1E3E52013EA74005A9AD4 /* ResultsResponse.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
 		AEC3AA10201398030017769F = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				AEC3AA2E201399C70017769F /* Application */,
+				AEA1E3E42013EA20005A9AD4 /* DataModels */,
 				AEC3AA352013A90E0017769F /* Modules */,
 				AEC3AA3320139A690017769F /* Resources */,
 			);
@@ -267,9 +297,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ItunesViper/Pods-ItunesViper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -291,7 +324,9 @@
 				AEC3AA422013AE800017769F /* ArtistSearchVC.swift in Sources */,
 				AEC3AA3A2013AB9C0017769F /* ArtistSearchContract.swift in Sources */,
 				AEC3AA372013A9660017769F /* AppNavigation.swift in Sources */,
+				AEA1E3E62013EA74005A9AD4 /* ResultsResponse.swift in Sources */,
 				AEC3AA3E2013ADAE0017769F /* ArtistSearchPresenter.swift in Sources */,
+				AEA1E3E92013EF29005A9AD4 /* Artist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

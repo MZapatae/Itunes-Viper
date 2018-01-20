@@ -10,7 +10,11 @@ import UIKit
 
 protocol ArtistSearchView: class {
   var presenter: ArtistSearchPresentation! { get set }
-  
+ 
+  func showLoadingIndicator()
+  func hideLoadingIndicator()
+  func showSearchResults(_ artists: [Artist])
+  func showSearchNoResultsScreen()
 }
 
 protocol ArtistSearchPresentation: class {
@@ -18,21 +22,22 @@ protocol ArtistSearchPresentation: class {
   var interactor: ArtistSearchUsesCase! { get set }
   var router: ArtistSearchWireframe! { get set }
   
+  func didSearchArtist(query: String)
 }
 
 protocol ArtistSearchUsesCase: class {
   weak var output: ArtistSearchInteractorOutput! { get set }
   
+  func searchArtists(name: String)
 }
 
 protocol ArtistSearchInteractorOutput: class {
-  
-  
+  func searchResults(_ artists: [Artist])
+  func searchFailed(_ error: Error)
 }
 
 protocol ArtistSearchWireframe: class {
   weak var viewController: UIViewController? { get set }
-  
   
   static func assembleModule() -> UIViewController
 }
