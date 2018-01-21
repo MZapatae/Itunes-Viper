@@ -11,9 +11,21 @@ import UIKit
 class ArtistSearchVC: UIViewController {
   var presenter: ArtistSearchPresentation!
   
+  @IBOutlet weak var resultsTableView: UITableView!
+  @IBOutlet weak var searchBar: UISearchBar!
+  
+  let searchController = UISearchController(searchResultsController: nil)
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    searchBar.delegate = self
+  }
+}
 
+extension ArtistSearchVC: UISearchBarDelegate {
+  
+  func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    presenter.didSearchArtist(byName: searchBar.text ?? "")
   }
 }
 
@@ -34,7 +46,5 @@ extension ArtistSearchVC: ArtistSearchView {
   func showSearchNoResultsScreen() {
     //code...
   }
-  
-  
   
 }

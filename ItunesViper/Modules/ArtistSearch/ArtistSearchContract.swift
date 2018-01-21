@@ -22,13 +22,13 @@ protocol ArtistSearchPresentation: class {
   var interactor: ArtistSearchUsesCase! { get set }
   var router: ArtistSearchWireframe! { get set }
   
-  func didSearchArtist(query: String)
+  func didSearchArtist(byName query: String)
 }
 
 protocol ArtistSearchUsesCase: class {
   weak var output: ArtistSearchInteractorOutput! { get set }
   
-  func searchArtists(name: String)
+  func searchArtists(byName query: String)
 }
 
 protocol ArtistSearchInteractorOutput: class {

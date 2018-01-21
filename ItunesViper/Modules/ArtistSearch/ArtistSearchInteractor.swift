@@ -9,7 +9,7 @@
 class ArtistSearchInteractor: ArtistSearchUsesCase {
   weak var output: ArtistSearchInteractorOutput!
   
-  func searchArtists(name: String) {
+  func searchArtists(byName query: String) {
     //code...
   }
   

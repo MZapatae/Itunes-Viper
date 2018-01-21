@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AEA1E3E62013EA74005A9AD4 /* ResultsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3E52013EA74005A9AD4 /* ResultsResponse.swift */; };
 		AEA1E3E92013EF29005A9AD4 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3E82013EF29005A9AD4 /* Artist.swift */; };
+		AEA1E3EC201407F8005A9AD4 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3EB201407F8005A9AD4 /* Validator.swift */; };
 		AEC3AA1D201398030017769F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA1C201398030017769F /* AppDelegate.swift */; };
 		AEC3AA24201398030017769F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA23201398030017769F /* Assets.xcassets */; };
 		AEC3AA27201398030017769F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA25201398030017769F /* LaunchScreen.storyboard */; };
@@ -30,6 +31,7 @@
 		775FDB8EAAEB18791BB8879C /* Pods-ItunesViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesViper.release.xcconfig"; path = "Pods/Target Support Files/Pods-ItunesViper/Pods-ItunesViper.release.xcconfig"; sourceTree = "<group>"; };
 		AEA1E3E52013EA74005A9AD4 /* ResultsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsResponse.swift; sourceTree = "<group>"; };
 		AEA1E3E82013EF29005A9AD4 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		AEA1E3EB201407F8005A9AD4 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		AEC3AA19201398030017769F /* ItunesViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC3AA1C201398030017769F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEC3AA23201398030017769F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +102,29 @@
 			path = ResponseModel;
 			sourceTree = "<group>";
 		};
+		AEA1E3EA201407EA005A9AD4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AEA1E3EB201407F8005A9AD4 /* Validator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AEA1E3ED201411B1005A9AD4 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				AEA1E3EE201411BF005A9AD4 /* Remote */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		AEA1E3EE201411BF005A9AD4 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
 		AEC3AA10201398030017769F = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +149,9 @@
 				AEC3AA2E201399C70017769F /* Application */,
 				AEA1E3E42013EA20005A9AD4 /* DataModels */,
 				AEC3AA352013A90E0017769F /* Modules */,
+				AEA1E3ED201411B1005A9AD4 /* DataManager */,
 				AEC3AA3320139A690017769F /* Resources */,
+				AEA1E3EA201407EA005A9AD4 /* Helpers */,
 			);
 			path = ItunesViper;
 			sourceTree = "<group>";
@@ -326,6 +353,7 @@
 				AEC3AA372013A9660017769F /* AppNavigation.swift in Sources */,
 				AEA1E3E62013EA74005A9AD4 /* ResultsResponse.swift in Sources */,
 				AEC3AA3E2013ADAE0017769F /* ArtistSearchPresenter.swift in Sources */,
+				AEA1E3EC201407F8005A9AD4 /* Validator.swift in Sources */,
 				AEA1E3E92013EF29005A9AD4 /* Artist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

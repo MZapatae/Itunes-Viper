@@ -11,10 +11,14 @@ class ArtistSearchPresenter: ArtistSearchPresentation {
   var interactor: ArtistSearchUsesCase!
   var router: ArtistSearchWireframe!
   
-  func didSearchArtist(query: String) {
-    //code...
+  func didSearchArtist(byName query: String) {
+    if Validator.isQueryValid(query) {
+      interactor.searchArtists(byName: query)
+    } else {
+      //TODO: Call router to show message
+    }
   }
-  
+
 }
 
 extension ArtistSearchPresenter: ArtistSearchInteractorOutput {
