@@ -36,7 +36,7 @@ final class ApiClient: ApiClientProtocol {
     
     request
       .validate(statusCode: 200...299)
-      .validate(contentType: ["application/json"])
+      .validate(contentType: ["text/javascript"])
       .responseString(completionHandler: { (response) in
         debugPrint(response)
         switch response.result {
@@ -60,8 +60,7 @@ final class ApiClient: ApiClientProtocol {
   }
   
   private func url(path: Path) -> URL {
-    let baseUrl = URL(string: AppConstants.apiUrl)!
-    return baseUrl.appendingPathComponent(path)
+    return URL(string: AppConstants.apiUrl + path)!
   }
   
   private func httpMethod(from method: Method) -> Alamofire.HTTPMethod {

@@ -11,7 +11,7 @@ import Foundation
 enum API {
   
   static func searchArtists(query: String) -> Endpoint<ResultsResponse> { //TODO: Improve options with enums
-    return Endpoint<ResultsResponse>(method: .get, path: "?term=\(query)&entity=musicArtist&attribute=artistTerm")
+    return Endpoint<ResultsResponse>(method: .get, path: "/?term=\(query)&entity=musicArtist&attribute=artistTerm")
   }
   
 }

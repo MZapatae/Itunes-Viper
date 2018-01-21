@@ -11,7 +11,7 @@ import Foundation
 class Validator {
   
   static func isQueryValid(_ testQuery: String) -> Bool {
-    guard testQuery.isEmpty else { return false }
+    guard !testQuery.isEmpty else { return false }
     return true
   }
   
