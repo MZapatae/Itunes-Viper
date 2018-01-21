@@ -9,7 +9,6 @@
 import UIKit
 
 class ArtistSearchRouter: ArtistSearchWireframe {
-  
   weak var viewController: UIViewController?
   
   static func assembleModule() -> UIViewController {
@@ -31,6 +30,18 @@ class ArtistSearchRouter: ArtistSearchWireframe {
     router.viewController = view
     
     return navigation
+  }
+  
+  func presentAlertDialog(message: String) {
+    let alert = UIAlertController(title: "Alerta", message: message, preferredStyle: UIAlertControllerStyle.alert)
+    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+    viewController?.present(alert, animated: true, completion: nil)
+  }
+  
+  func presentNoResultMessage() {
+    let alert = UIAlertController(title: "Alerta", message: "No encontramos resultados", preferredStyle: UIAlertControllerStyle.alert)
+    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+    viewController?.present(alert, animated: true, completion: nil)
   }
   
 }

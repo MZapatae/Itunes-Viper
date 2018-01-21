@@ -15,6 +15,7 @@ class ArtistSearchPresenter: ArtistSearchPresentation {
     didSet {
       if artists.isEmpty {
         view?.showSearchNoResultsScreen()
+        router.presentNoResultMessage()
       } else {
         view?.showSearchResults(artists)
       }
@@ -25,7 +26,7 @@ class ArtistSearchPresenter: ArtistSearchPresentation {
     if Validator.isQueryValid(query) {
       interactor.searchArtist(byName: query)
     } else {
-      //TODO: Call router to show message
+      router.presentAlertDialog(message: "Debe ingresar un artista a buscar")
     }
   }
 
@@ -41,6 +42,7 @@ extension ArtistSearchPresenter: ArtistSearchInteractorOutput {
   func searchFailed(_ error: Error) {
     self.artists.removeAll()
     view?.hideLoadingIndicator()
+    router.presentAlertDialog(message: error.localizedDescription)
   }
   
 }

@@ -22,6 +22,7 @@ class ArtistSearchVC: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    navigationItem.title = "Itunes Artistas"
     searchBar.delegate = self
     tableView.dataSource = self
     tableView.register(ArtistViewCell.self)

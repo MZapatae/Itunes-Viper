@@ -40,5 +40,8 @@ protocol ArtistSearchWireframe: class {
   weak var viewController: UIViewController? { get set }
   
   static func assembleModule() -> UIViewController
+  
+  func presentAlertDialog(message: String)
+  func presentNoResultMessage()
 }
 

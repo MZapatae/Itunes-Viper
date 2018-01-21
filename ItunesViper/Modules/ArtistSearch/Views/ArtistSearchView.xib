@@ -21,20 +21,15 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="2xY-LO-Dk0">
+                <searchBar contentMode="redraw" placeholder="Buscar artistas..." translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xY-LO-Dk0">
                     <rect key="frame" x="0.0" y="64" width="375" height="56"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="XpX-IZ-lxt"/>
                     </constraints>
+                    <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No se encontraron resultados" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fl1-aI-M2F">
-                    <rect key="frame" x="74" y="323" width="226.5" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="55" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Ux-8j-aIo">
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="55" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Ux-8j-aIo">
                     <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
@@ -49,8 +44,6 @@
                 <constraint firstItem="0Ux-8j-aIo" firstAttribute="top" secondItem="2xY-LO-Dk0" secondAttribute="bottom" id="BQP-Yk-qGl"/>
                 <constraint firstItem="0Ux-8j-aIo" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="bTR-7B-TEg"/>
                 <constraint firstItem="0Ux-8j-aIo" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="e05-Jr-VRn"/>
-                <constraint firstItem="fl1-aI-M2F" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="n1h-mB-XFa"/>
-                <constraint firstItem="fl1-aI-M2F" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="p9Z-SS-k2R"/>
                 <constraint firstItem="2xY-LO-Dk0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rX3-ob-7UF"/>
                 <constraint firstItem="0Ux-8j-aIo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xmw-Wp-T5g"/>
             </constraints>
