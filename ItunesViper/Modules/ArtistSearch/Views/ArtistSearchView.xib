@@ -11,8 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArtistSearchVC" customModule="ItunesViper" customModuleProvider="target">
             <connections>
-                <outlet property="resultsTableView" destination="0Ux-8j-aIo" id="GmZ-7Q-UT1"/>
                 <outlet property="searchBar" destination="2xY-LO-Dk0" id="X7c-7e-JTG"/>
+                <outlet property="tableView" destination="0Ux-8j-aIo" id="GmZ-7Q-UT1"/>
                 <outlet property="view" destination="iN0-l3-epB" id="56m-9M-zlm"/>
             </connections>
         </placeholder>
@@ -28,9 +28,18 @@
                     </constraints>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Ux-8j-aIo">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No se encontraron resultados" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fl1-aI-M2F">
+                    <rect key="frame" x="74" y="323" width="226.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="55" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Ux-8j-aIo">
                     <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="TBw-jK-PoE"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -40,6 +49,8 @@
                 <constraint firstItem="0Ux-8j-aIo" firstAttribute="top" secondItem="2xY-LO-Dk0" secondAttribute="bottom" id="BQP-Yk-qGl"/>
                 <constraint firstItem="0Ux-8j-aIo" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="bTR-7B-TEg"/>
                 <constraint firstItem="0Ux-8j-aIo" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="e05-Jr-VRn"/>
+                <constraint firstItem="fl1-aI-M2F" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="n1h-mB-XFa"/>
+                <constraint firstItem="fl1-aI-M2F" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="p9Z-SS-k2R"/>
                 <constraint firstItem="2xY-LO-Dk0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rX3-ob-7UF"/>
                 <constraint firstItem="0Ux-8j-aIo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xmw-Wp-T5g"/>
             </constraints>

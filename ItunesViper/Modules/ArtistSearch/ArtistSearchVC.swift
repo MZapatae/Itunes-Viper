@@ -7,19 +7,46 @@
 //
 
 import UIKit
+import PKHUD
 
 class ArtistSearchVC: UIViewController {
-  var presenter: ArtistSearchPresentation!
-  
-  @IBOutlet weak var resultsTableView: UITableView!
+  @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var searchBar: UISearchBar!
-  
-  let searchController = UISearchController(searchResultsController: nil)
+  var presenter: ArtistSearchPresentation!
+
+  var artists: [Artist] = [] {
+    didSet {
+      tableView.reloadData()
+    }
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     searchBar.delegate = self
+    tableView.dataSource = self
+    tableView.register(ArtistViewCell.self)
   }
+}
+
+extension ArtistSearchVC: ArtistSearchView {
+  
+  func showLoadingIndicator() {
+    HUD.show(.progress)
+  }
+  
+  func hideLoadingIndicator() {
+    HUD.hide()
+  }
+  
+  func showSearchResults(_ artists: [Artist]) {
+    self.artists = artists
+    tableView.isHidden = false
+  }
+  
+  func showSearchNoResultsScreen() {
+    tableView.isHidden = true
+  }
+  
 }
 
 extension ArtistSearchVC: UISearchBarDelegate {
@@ -27,24 +54,19 @@ extension ArtistSearchVC: UISearchBarDelegate {
   func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
     presenter.didSearchArtist(byName: searchBar.text ?? "")
   }
+  
 }
 
-extension ArtistSearchVC: ArtistSearchView {
+extension ArtistSearchVC: UITableViewDataSource {
   
-  func showLoadingIndicator() {
-    //code...
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return artists.count
   }
   
-  func hideLoadingIndicator() {
-    //code...
-  }
-  
-  func showSearchResults(_ artists: [Artist]) {
-    //code...
-  }
-  
-  func showSearchNoResultsScreen() {
-    //code...
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as ArtistViewCell
+    cell.setupCellData(artists[indexPath.row])
+    return cell
   }
   
 }

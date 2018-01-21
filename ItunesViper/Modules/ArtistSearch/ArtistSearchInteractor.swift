@@ -9,7 +9,7 @@
 class ArtistSearchInteractor: ArtistSearchUsesCase {
   weak var output: ArtistSearchInteractorOutput!
   
-  func searchArtists(byName query: String) {
+  func searchArtist(byName query: String) {
     print ("Connecting iTunes Api...")
     ApiClient.sharedInstance.request(API.searchArtists(query: query), onSuccess: { (response) in
       if let results = response.results {

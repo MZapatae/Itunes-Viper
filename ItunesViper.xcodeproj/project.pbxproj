@@ -13,6 +13,12 @@
 		AEA1E3F020141295005A9AD4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3EF20141295005A9AD4 /* Endpoint.swift */; };
 		AEA1E3F2201412DD005A9AD4 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3F1201412DD005A9AD4 /* ApiClient.swift */; };
 		AEA1E3F4201414B3005A9AD4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3F3201414B3005A9AD4 /* API.swift */; };
+		AEA1E3F72014FDD3005A9AD4 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3F62014FDD3005A9AD4 /* ReusableView.swift */; };
+		AEA1E3F92014FED5005A9AD4 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3F82014FED5005A9AD4 /* NibLoadableView.swift */; };
+		AEA1E3FB2014FF8F005A9AD4 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3FA2014FF8F005A9AD4 /* UITableViewExtensions.swift */; };
+		AEA1E3FD2014FF9E005A9AD4 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3FC2014FF9E005A9AD4 /* UITableViewCellExtensions.swift */; };
+		AEA1E4002015000D005A9AD4 /* ArtistViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3FE2015000D005A9AD4 /* ArtistViewCell.swift */; };
+		AEA1E4012015000D005A9AD4 /* ArtistViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA1E3FF2015000D005A9AD4 /* ArtistViewCell.xib */; };
 		AEC3AA1D201398030017769F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA1C201398030017769F /* AppDelegate.swift */; };
 		AEC3AA24201398030017769F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA23201398030017769F /* Assets.xcassets */; };
 		AEC3AA27201398030017769F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA25201398030017769F /* LaunchScreen.storyboard */; };
@@ -38,6 +44,12 @@
 		AEA1E3EF20141295005A9AD4 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		AEA1E3F1201412DD005A9AD4 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		AEA1E3F3201414B3005A9AD4 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		AEA1E3F62014FDD3005A9AD4 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		AEA1E3F82014FED5005A9AD4 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		AEA1E3FA2014FF8F005A9AD4 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		AEA1E3FC2014FF9E005A9AD4 /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
+		AEA1E3FE2015000D005A9AD4 /* ArtistViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewCell.swift; sourceTree = "<group>"; };
+		AEA1E3FF2015000D005A9AD4 /* ArtistViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistViewCell.xib; sourceTree = "<group>"; };
 		AEC3AA19201398030017769F /* ItunesViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC3AA1C201398030017769F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEC3AA23201398030017769F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +123,7 @@
 		AEA1E3EA201407EA005A9AD4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				AEA1E3F52014FC84005A9AD4 /* UITableView */,
 				AEA1E3EB201407F8005A9AD4 /* Validator.swift */,
 			);
 			path = Helpers;
@@ -132,6 +145,17 @@
 				AEA1E3F3201414B3005A9AD4 /* API.swift */,
 			);
 			path = Remote;
+			sourceTree = "<group>";
+		};
+		AEA1E3F52014FC84005A9AD4 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				AEA1E3F62014FDD3005A9AD4 /* ReusableView.swift */,
+				AEA1E3F82014FED5005A9AD4 /* NibLoadableView.swift */,
+				AEA1E3FA2014FF8F005A9AD4 /* UITableViewExtensions.swift */,
+				AEA1E3FC2014FF9E005A9AD4 /* UITableViewCellExtensions.swift */,
+			);
+			path = UITableView;
 			sourceTree = "<group>";
 		};
 		AEC3AA10201398030017769F = {
@@ -219,6 +243,8 @@
 			isa = PBXGroup;
 			children = (
 				AEC3AA442013AED50017769F /* ArtistSearchView.xib */,
+				AEA1E3FF2015000D005A9AD4 /* ArtistViewCell.xib */,
+				AEA1E3FE2015000D005A9AD4 /* ArtistViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEC3AA27201398030017769F /* LaunchScreen.storyboard in Resources */,
+				AEA1E4012015000D005A9AD4 /* ArtistViewCell.xib in Resources */,
 				AEC3AA452013AED50017769F /* ArtistSearchView.xib in Resources */,
 				AEC3AA24201398030017769F /* Assets.xcassets in Resources */,
 			);
@@ -359,16 +386,21 @@
 				AEC3AA1D201398030017769F /* AppDelegate.swift in Sources */,
 				AEC3AA402013AE250017769F /* ArtistSearchRouter.swift in Sources */,
 				AEC3AA3C2013AC870017769F /* ArtistSearchInteractor.swift in Sources */,
+				AEA1E3FB2014FF8F005A9AD4 /* UITableViewExtensions.swift in Sources */,
 				AEA1E3F020141295005A9AD4 /* Endpoint.swift in Sources */,
 				AEA1E3F4201414B3005A9AD4 /* API.swift in Sources */,
 				AEC3AA3020139A1E0017769F /* AppConstants.swift in Sources */,
 				AEC3AA3220139A300017769F /* AppRouter.swift in Sources */,
+				AEA1E3F92014FED5005A9AD4 /* NibLoadableView.swift in Sources */,
 				AEC3AA422013AE800017769F /* ArtistSearchVC.swift in Sources */,
 				AEA1E3F2201412DD005A9AD4 /* ApiClient.swift in Sources */,
 				AEC3AA3A2013AB9C0017769F /* ArtistSearchContract.swift in Sources */,
+				AEA1E3FD2014FF9E005A9AD4 /* UITableViewCellExtensions.swift in Sources */,
 				AEC3AA372013A9660017769F /* AppNavigation.swift in Sources */,
+				AEA1E3F72014FDD3005A9AD4 /* ReusableView.swift in Sources */,
 				AEA1E3E62013EA74005A9AD4 /* ResultsResponse.swift in Sources */,
 				AEC3AA3E2013ADAE0017769F /* ArtistSearchPresenter.swift in Sources */,
+				AEA1E4002015000D005A9AD4 /* ArtistViewCell.swift in Sources */,
 				AEA1E3EC201407F8005A9AD4 /* Validator.swift in Sources */,
 				AEA1E3E92013EF29005A9AD4 /* Artist.swift in Sources */,
 			);

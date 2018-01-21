@@ -28,7 +28,7 @@ protocol ArtistSearchPresentation: class {
 protocol ArtistSearchUsesCase: class {
   weak var output: ArtistSearchInteractorOutput! { get set }
   
-  func searchArtists(byName query: String)
+  func searchArtist(byName query: String)
 }
 
 protocol ArtistSearchInteractorOutput: class {
