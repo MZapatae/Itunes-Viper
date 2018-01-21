@@ -1,13 +1,15 @@
 //
-//  AppConstants.swift
+//  Artist.swift
 //  ItunesViper
 //
 //  Created by Miguel A. Zapata on 20-01-18.
 //  Copyright © 2018 Miguel A. Zapata. All rights reserved.
 //
 
-enum AppConstants {
+import Foundation
 
-  static let apiUrl = "https://itunes.apple.com/search"
-
+struct Artist {
+  var id: Int
+  var name: String
+  var linkUrl: String
 }
