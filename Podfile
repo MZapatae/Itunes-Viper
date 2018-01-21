@@ -7,5 +7,7 @@ target 'ItunesViper' do
 
   # Pods for ItunesViper
   pod 'ObjectMapper', '~> 3.0'
+  pod 'Alamofire', '~> 4.5.1'
+  pod 'PKHUD', '~> 5.0'
 
 end

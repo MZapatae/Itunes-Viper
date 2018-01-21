@@ -10,6 +10,9 @@
 		AEA1E3E62013EA74005A9AD4 /* ResultsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3E52013EA74005A9AD4 /* ResultsResponse.swift */; };
 		AEA1E3E92013EF29005A9AD4 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3E82013EF29005A9AD4 /* Artist.swift */; };
 		AEA1E3EC201407F8005A9AD4 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3EB201407F8005A9AD4 /* Validator.swift */; };
+		AEA1E3F020141295005A9AD4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3EF20141295005A9AD4 /* Endpoint.swift */; };
+		AEA1E3F2201412DD005A9AD4 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3F1201412DD005A9AD4 /* ApiClient.swift */; };
+		AEA1E3F4201414B3005A9AD4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E3F3201414B3005A9AD4 /* API.swift */; };
 		AEC3AA1D201398030017769F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA1C201398030017769F /* AppDelegate.swift */; };
 		AEC3AA24201398030017769F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA23201398030017769F /* Assets.xcassets */; };
 		AEC3AA27201398030017769F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA25201398030017769F /* LaunchScreen.storyboard */; };
@@ -32,6 +35,9 @@
 		AEA1E3E52013EA74005A9AD4 /* ResultsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsResponse.swift; sourceTree = "<group>"; };
 		AEA1E3E82013EF29005A9AD4 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		AEA1E3EB201407F8005A9AD4 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		AEA1E3EF20141295005A9AD4 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		AEA1E3F1201412DD005A9AD4 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		AEA1E3F3201414B3005A9AD4 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		AEC3AA19201398030017769F /* ItunesViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC3AA1C201398030017769F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEC3AA23201398030017769F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +127,9 @@
 		AEA1E3EE201411BF005A9AD4 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				AEA1E3EF20141295005A9AD4 /* Endpoint.swift */,
+				AEA1E3F1201412DD005A9AD4 /* ApiClient.swift */,
+				AEA1E3F3201414B3005A9AD4 /* API.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -325,11 +334,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ItunesViper/Pods-ItunesViper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -346,9 +359,12 @@
 				AEC3AA1D201398030017769F /* AppDelegate.swift in Sources */,
 				AEC3AA402013AE250017769F /* ArtistSearchRouter.swift in Sources */,
 				AEC3AA3C2013AC870017769F /* ArtistSearchInteractor.swift in Sources */,
+				AEA1E3F020141295005A9AD4 /* Endpoint.swift in Sources */,
+				AEA1E3F4201414B3005A9AD4 /* API.swift in Sources */,
 				AEC3AA3020139A1E0017769F /* AppConstants.swift in Sources */,
 				AEC3AA3220139A300017769F /* AppRouter.swift in Sources */,
 				AEC3AA422013AE800017769F /* ArtistSearchVC.swift in Sources */,
+				AEA1E3F2201412DD005A9AD4 /* ApiClient.swift in Sources */,
 				AEC3AA3A2013AB9C0017769F /* ArtistSearchContract.swift in Sources */,
 				AEC3AA372013A9660017769F /* AppNavigation.swift in Sources */,
 				AEA1E3E62013EA74005A9AD4 /* ResultsResponse.swift in Sources */,

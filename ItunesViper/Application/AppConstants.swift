@@ -6,4 +6,8 @@
 //  Copyright © 2018 Miguel A. Zapata. All rights reserved.
 //
 
-import Foundation
+enum AppConstants {
+
+  static let apiUrl = "https://itunes.apple.com/search"
+
+}
