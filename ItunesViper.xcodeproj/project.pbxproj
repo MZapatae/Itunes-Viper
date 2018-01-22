@@ -27,6 +27,8 @@
 		AEA1E40E20158C63005A9AD4 /* ArtistLookupRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E40D20158C63005A9AD4 /* ArtistLookupRouter.swift */; };
 		AEA1E41020158C6D005A9AD4 /* ArtistLookupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E40F20158C6D005A9AD4 /* ArtistLookupVC.swift */; };
 		AEA1E41320158CFF005A9AD4 /* ArtistLookupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA1E41220158CFF005A9AD4 /* ArtistLookupView.xib */; };
+		AEA1E4162015A80B005A9AD4 /* TrackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1E4142015A80B005A9AD4 /* TrackViewCell.swift */; };
+		AEA1E4172015A80B005A9AD4 /* TrackViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA1E4152015A80B005A9AD4 /* TrackViewCell.xib */; };
 		AEC3AA1D201398030017769F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3AA1C201398030017769F /* AppDelegate.swift */; };
 		AEC3AA24201398030017769F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA23201398030017769F /* Assets.xcassets */; };
 		AEC3AA27201398030017769F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC3AA25201398030017769F /* LaunchScreen.storyboard */; };
@@ -66,6 +68,8 @@
 		AEA1E40D20158C63005A9AD4 /* ArtistLookupRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistLookupRouter.swift; sourceTree = "<group>"; };
 		AEA1E40F20158C6D005A9AD4 /* ArtistLookupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistLookupVC.swift; sourceTree = "<group>"; };
 		AEA1E41220158CFF005A9AD4 /* ArtistLookupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistLookupView.xib; sourceTree = "<group>"; };
+		AEA1E4142015A80B005A9AD4 /* TrackViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewCell.swift; sourceTree = "<group>"; };
+		AEA1E4152015A80B005A9AD4 /* TrackViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackViewCell.xib; sourceTree = "<group>"; };
 		AEC3AA19201398030017769F /* ItunesViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC3AA1C201398030017769F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEC3AA23201398030017769F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -193,6 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				AEA1E41220158CFF005A9AD4 /* ArtistLookupView.xib */,
+				AEA1E4152015A80B005A9AD4 /* TrackViewCell.xib */,
+				AEA1E4142015A80B005A9AD4 /* TrackViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA1E4172015A80B005A9AD4 /* TrackViewCell.xib in Resources */,
 				AEC3AA27201398030017769F /* LaunchScreen.storyboard in Resources */,
 				AEA1E4012015000D005A9AD4 /* ArtistViewCell.xib in Resources */,
 				AEC3AA452013AED50017769F /* ArtistSearchView.xib in Resources */,
@@ -403,12 +410,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ItunesViper/Pods-ItunesViper-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 			);
@@ -434,6 +443,7 @@
 				AEC3AA3020139A1E0017769F /* AppConstants.swift in Sources */,
 				AEA1E41020158C6D005A9AD4 /* ArtistLookupVC.swift in Sources */,
 				AEA1E40820158BEC005A9AD4 /* ArtistLookupContract.swift in Sources */,
+				AEA1E4162015A80B005A9AD4 /* TrackViewCell.swift in Sources */,
 				AEC3AA3220139A300017769F /* AppRouter.swift in Sources */,
 				AEA1E3F92014FED5005A9AD4 /* NibLoadableView.swift in Sources */,
 				AEA1E40C20158C57005A9AD4 /* ArtistLookupPresenter.swift in Sources */,

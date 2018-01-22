@@ -14,5 +14,4 @@ struct Track {
   var name: String
   var previewUrl: String
   var artworkUrl: String
-  var artistUrl: String
 }

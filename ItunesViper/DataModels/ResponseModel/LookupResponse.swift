@@ -20,7 +20,6 @@ struct TrackResponse {
   var trackName: String?
   var previewUrl: String?
   var artworkUrl100: String?
-  var artistUrl: String?
 }
 
 extension LookupResponse: Mappable {
@@ -47,7 +46,6 @@ extension TrackResponse: Mappable {
     trackName       <- map["trackName"]
     previewUrl      <- map["previewUrl"]
     artworkUrl100   <- map["artworkUrl100"]
-    artistUrl       <- map["artistViewUrl"]
   }
 }
 

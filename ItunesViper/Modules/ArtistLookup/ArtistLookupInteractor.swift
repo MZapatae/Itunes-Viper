@@ -9,21 +9,20 @@
 class ArtistLookupInteractor: ArtistLookupUsesCase {
   weak var output: ArtistLookupInteractorOutput!
   
-  func fetchTracks(artist id: Int) {
-    print ("Fetch artist \(id) tracks...")
-    ApiClient.sharedInstance.request(API.lookupArtist(id: id), onSuccess: { (response) in
+  func fetchTracks(artistId: Int) {
+    print ("Fetch artist \(artistId) tracks...")
+    ApiClient.sharedInstance.request(API.lookupArtist(id: artistId), onSuccess: { (response) in
       if let results = response.results {
         var tracks: [Track] = []
         results.forEach({ (result) in
-          if let artistName = result.artistName, let albumName = result.collectionName, let trackName = result.trackName,
-            let previewUrl = result.previewUrl, let artworkUrl = result.artworkUrl100, let artistUrl = result.artistUrl {
+          if let artistName = result.artistName, let albumName = result.collectionName,
+            let trackName = result.trackName, let previewUrl = result.previewUrl, let artworkUrl = result.artworkUrl100 {
             
             let track = Track(artist: artistName,
                               album: albumName,
                               name: trackName,
                               previewUrl: previewUrl,
-                              artworkUrl: artworkUrl,
-                              artistUrl: artistUrl)
+                              artworkUrl: artworkUrl)
             
             tracks.append(track)
           }

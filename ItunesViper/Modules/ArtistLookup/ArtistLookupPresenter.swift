@@ -11,7 +11,7 @@ class ArtistLookupPresenter: ArtistLookupPresentation {
   var interactor: ArtistLookupUsesCase!
   var router: ArtistLookupWireframe!
   
-  var selectedArtistId: Int!
+  var selectedArtist: Artist!
   var tracks: [Track] = [] {
     didSet {
       if tracks.isEmpty {
@@ -23,7 +23,8 @@ class ArtistLookupPresenter: ArtistLookupPresentation {
   }
   
   func viewDidLoad() {
-    interactor.fetchTracks(artist: selectedArtistId)
+    interactor.fetchTracks(artistId: selectedArtist.id)
+    view?.showArtistInfo(selectedArtist)
   }
   
   func didSelectTrack(_ track: Track) {

@@ -12,7 +12,7 @@ import SafariServices
 class ArtistLookupRouter: ArtistLookupWireframe {
   weak var viewController: UIViewController?
   
-  static func assembleModule(artistId: Int) -> UIViewController {
+  static func assembleModule(artist: Artist) -> UIViewController {
     let view = ArtistLookupVC(nibName: "ArtistLookupView", bundle: nil)
     let presenter = ArtistLookupPresenter()
     let interactor = ArtistLookupInteractor()
@@ -23,8 +23,7 @@ class ArtistLookupRouter: ArtistLookupWireframe {
     presenter.view = view
     presenter.interactor = interactor
     presenter.router = router
-    presenter.selectedArtistId = artistId
-    
+    presenter.selectedArtist = artist
     
     interactor.output = presenter
     

@@ -45,8 +45,8 @@ class ArtistSearchRouter: ArtistSearchWireframe {
     viewController?.present(alert, animated: true, completion: nil)
   }
   
-  func pushArtistLookup(forId id: Int) {
-    let artistLookupVC = ArtistLookupRouter.assembleModule(artistId: id)
+  func pushArtistLookup(artist: Artist) {
+    let artistLookupVC = ArtistLookupRouter.assembleModule(artist: artist)
     viewController?.navigationController?.pushViewController(artistLookupVC, animated: true)
   }
   

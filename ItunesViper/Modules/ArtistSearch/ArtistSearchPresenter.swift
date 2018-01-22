@@ -31,7 +31,7 @@ class ArtistSearchPresenter: ArtistSearchPresentation {
   }
   
   func didSelectedArtist(_ artist: Artist) {
-    router.pushArtistLookup(forId: artist.id)
+    router.pushArtistLookup(artist: artist)
   }
 
 }

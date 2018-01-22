@@ -14,6 +14,7 @@ protocol ArtistLookupView: class {
   func showLoadingIndicator()
   func hideLoadingIndicator()
   func showTracks(_ tracks: [Track])
+  func showArtistInfo(_ artist: Artist)
   func showNoResultsScreen()
 }
 
@@ -29,7 +30,7 @@ protocol ArtistLookupPresentation: class {
 protocol ArtistLookupUsesCase: class {
   weak var output: ArtistLookupInteractorOutput! { get set }
   
-  func fetchTracks(artist id: Int)
+  func fetchTracks(artistId: Int)
 }
 
 protocol ArtistLookupInteractorOutput: class {
@@ -40,7 +41,7 @@ protocol ArtistLookupInteractorOutput: class {
 protocol ArtistLookupWireframe: class {
   weak var viewController: UIViewController? { get set }
   
-  static func assembleModule(artistId: Int) -> UIViewController
+  static func assembleModule(artist: Artist) -> UIViewController
   
   func presentWebView(url: String)
   func presentAlertDialog(message: String)

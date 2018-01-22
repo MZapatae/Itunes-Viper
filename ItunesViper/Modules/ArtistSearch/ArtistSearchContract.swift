@@ -42,7 +42,7 @@ protocol ArtistSearchWireframe: class {
   
   static func assembleModule() -> UIViewController
   
-  func pushArtistLookup(forId id: Int)
+  func pushArtistLookup(artist: Artist)
   func presentAlertDialog(message: String)
   func presentNoResultMessage()
 }

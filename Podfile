@@ -9,5 +9,6 @@ target 'ItunesViper' do
   pod 'ObjectMapper', '~> 3.0'
   pod 'Alamofire', '~> 4.5.1'
   pod 'PKHUD', '~> 5.0'
+  pod 'Kingfisher', '~> 4.6.1'
 
 end

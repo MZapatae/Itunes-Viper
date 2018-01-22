@@ -12,6 +12,7 @@ import PKHUD
 class ArtistSearchVC: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var searchBar: UISearchBar!
+  
   var presenter: ArtistSearchPresentation!
 
   var artists: [Artist] = [] {
@@ -22,7 +23,7 @@ class ArtistSearchVC: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    navigationItem.title = "Itunes Artistas"
+    navigationItem.title = "Buscar"
     searchBar.delegate = self
     tableView.delegate = self
     tableView.dataSource = self
