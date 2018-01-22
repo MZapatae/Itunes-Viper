@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArtistLookupVC" customModule="ItunesViper" customModuleProvider="target">
+            <connections>
+                <outlet property="artistNameLabel" destination="ccI-aG-Nhm" id="wWx-LA-MFw"/>
+                <outlet property="tableView" destination="eyn-8S-IT6" id="DbW-tn-mSJ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="9q7-32-3SG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No se encontraron canciones" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahx-NY-r43">
+                    <rect key="frame" x="71" y="323" width="233" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coldplay and the chainsokker" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="18" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ccI-aG-Nhm">
+                    <rect key="frame" x="16" y="75" width="343" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="85" id="jgi-eh-LZm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpJ-1e-DOb">
+                    <rect key="frame" x="223" y="168" width="136" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="FCC-fD-YMB"/>
+                        <constraint firstAttribute="width" constant="136" id="G0r-oo-Nq2"/>
+                    </constraints>
+                    <state key="normal" title="Ver en Apple Music"/>
+                    <connections>
+                        <action selector="openInAppleMusicAction:" destination="-1" eventType="touchUpInside" id="XDS-tD-iKo"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="175" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eyn-8S-IT6">
+                    <rect key="frame" x="0.0" y="213" width="375" height="454"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaA-nb-zP1">
+                    <rect key="frame" x="16" y="168" width="199" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="Kq1-xK-JwL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eyn-8S-IT6" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="0vQ-Rh-Wmr"/>
+                <constraint firstItem="Ahx-NY-r43" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1ch-Cu-Ruz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gpJ-1e-DOb" secondAttribute="trailing" constant="16" id="5vu-Rf-Hb0"/>
+                <constraint firstItem="FaA-nb-zP1" firstAttribute="top" secondItem="ccI-aG-Nhm" secondAttribute="bottom" constant="8" id="Avd-IN-hpN"/>
+                <constraint firstItem="gpJ-1e-DOb" firstAttribute="leading" secondItem="FaA-nb-zP1" secondAttribute="trailing" constant="8" id="FSL-22-w8G"/>
+                <constraint firstItem="FaA-nb-zP1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="FWp-hH-9lB"/>
+                <constraint firstItem="eyn-8S-IT6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MnK-yn-9lY"/>
+                <constraint firstItem="eyn-8S-IT6" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="NHG-1s-VKR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ccI-aG-Nhm" secondAttribute="trailing" constant="16" id="OVg-4j-Qqr"/>
+                <constraint firstItem="eyn-8S-IT6" firstAttribute="top" secondItem="gpJ-1e-DOb" secondAttribute="bottom" constant="8" id="ao6-Rf-s4D"/>
+                <constraint firstItem="ccI-aG-Nhm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="11" id="hb7-8T-vvn"/>
+                <constraint firstItem="gpJ-1e-DOb" firstAttribute="top" secondItem="ccI-aG-Nhm" secondAttribute="bottom" constant="8" id="nhr-iv-rm4"/>
+                <constraint firstItem="ccI-aG-Nhm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="pWG-uO-8hQ"/>
+                <constraint firstItem="Ahx-NY-r43" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rrV-fK-c25"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

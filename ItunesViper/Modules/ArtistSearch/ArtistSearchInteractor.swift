@@ -15,10 +15,14 @@ class ArtistSearchInteractor: ArtistSearchUsesCase {
       if let results = response.results {
         var artists: [Artist] = []
         results.forEach({ (result) in
-          if let artistId = result.artistId, let artistName = result.artistName, let artistLinkUrl = result.artistLinkUrl {
+          
+          // Disclaimer: If the result not contain and amgArtistId, will NOT SHOW as a result. Because i need this value
+          // for show the detail value.
+          if let artistId = result.amgArtistId, let artistName = result.artistName, let artistLinkUrl = result.artistLinkUrl {
             let artist = Artist(id: artistId, name: artistName, linkUrl: artistLinkUrl)
             artists.append(artist)
           }
+          
         })
         self.output.searchResults(artists)
       }
