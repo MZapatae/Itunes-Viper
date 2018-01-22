@@ -27,7 +27,6 @@ class ArtistSearchVC: UIViewController {
     tableView.delegate = self
     tableView.dataSource = self
     tableView.register(ArtistViewCell.self)
-    
   }
 }
 
@@ -56,6 +55,7 @@ extension ArtistSearchVC: UISearchBarDelegate {
   
   func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
     presenter.didSearchArtist(byName: searchBar.text ?? "")
+    searchBar.resignFirstResponder()
   }
   
 }

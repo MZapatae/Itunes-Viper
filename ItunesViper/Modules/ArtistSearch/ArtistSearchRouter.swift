@@ -47,7 +47,6 @@ class ArtistSearchRouter: ArtistSearchWireframe {
   
   func presentWebView(url: String) {
     let safariVC = SFSafariViewController(url: URL(string: url)!)
-    safariVC.configuration.
     viewController?.present(safariVC, animated: true, completion: nil)
   }
   
