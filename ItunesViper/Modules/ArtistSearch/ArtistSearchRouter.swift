@@ -45,9 +45,9 @@ class ArtistSearchRouter: ArtistSearchWireframe {
     viewController?.present(alert, animated: true, completion: nil)
   }
   
-  func presentWebView(url: String) {
-    let safariVC = SFSafariViewController(url: URL(string: url)!)
-    viewController?.present(safariVC, animated: true, completion: nil)
+  func pushArtistLookup(forId id: Int) {
+    let artistLookupVC = ArtistLookupRouter.assembleModule(artistId: id)
+    viewController?.navigationController?.pushViewController(artistLookupVC, animated: true)
   }
   
 }

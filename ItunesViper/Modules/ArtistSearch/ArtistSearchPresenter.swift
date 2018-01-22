@@ -31,7 +31,7 @@ class ArtistSearchPresenter: ArtistSearchPresentation {
   }
   
   func didSelectedArtist(_ artist: Artist) {
-    router.presentWebView(url: artist.linkUrl)
+    router.pushArtistLookup(forId: artist.id)
   }
 
 }

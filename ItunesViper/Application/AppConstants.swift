@@ -8,6 +8,6 @@
 
 enum AppConstants {
 
-  static let apiUrl = "https://itunes.apple.com/search"
+  static let apiUrl = "https://itunes.apple.com"
 
 }

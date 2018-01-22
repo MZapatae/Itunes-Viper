@@ -8,7 +8,7 @@
 
 import ObjectMapper
 
-struct ResultsResponse {
+struct SearchResponse {
   var resultCount: Int?
   var results: [ArtistResponse]?
 }
@@ -24,7 +24,7 @@ struct ArtistResponse {
   var primaryGenreId: Int?
 }
 
-extension ResultsResponse: Mappable {
+extension SearchResponse: Mappable {
   init?(map: Map) {
     guard map.JSON["resultCount"] != nil else { return nil }
     guard map.JSON["results"] != nil else { return nil }
