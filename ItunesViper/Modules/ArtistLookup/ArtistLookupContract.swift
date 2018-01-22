@@ -15,6 +15,7 @@ protocol ArtistLookupView: class {
   func hideLoadingIndicator()
   func showTracks(_ tracks: [Track])
   func showArtistInfo(_ artist: Artist)
+  func playMusic(url: String)
   func showNoResultsScreen()
 }
 
@@ -25,6 +26,7 @@ protocol ArtistLookupPresentation: class {
   
   func viewDidLoad()
   func didSelectTrack(_ track: Track)
+  func didPressAppleMusicButton()
 }
 
 protocol ArtistLookupUsesCase: class {
@@ -45,6 +47,5 @@ protocol ArtistLookupWireframe: class {
   
   func presentWebView(url: String)
   func presentAlertDialog(message: String)
-  func presentNoResultMessage()
 }
 

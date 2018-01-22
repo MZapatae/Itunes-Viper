@@ -38,11 +38,9 @@ class ArtistLookupRouter: ArtistLookupWireframe {
   }
   
   func presentAlertDialog(message: String) {
-    //code
-  }
-  
-  func presentNoResultMessage() {
-    //code
+    let alert = UIAlertController(title: "Alerta", message: message, preferredStyle: UIAlertControllerStyle.alert)
+    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+    viewController?.present(alert, animated: true, completion: nil)
   }
   
 }

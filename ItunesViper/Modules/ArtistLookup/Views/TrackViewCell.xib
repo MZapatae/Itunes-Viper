@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,15 +31,12 @@
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1K-it-6T7">
                                     <rect key="frame" x="8" y="0.0" width="304" height="28"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="28" id="R6s-ZV-xV4"/>
-                                    </constraints>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLw-Ke-QsE">
-                                    <rect key="frame" x="8" y="29" width="304" height="20.5"/>
+                                    <rect key="frame" x="8" y="29" width="304" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20.5" id="8R8-Lo-s0o"/>
                                     </constraints>
@@ -57,29 +55,25 @@
                                 <constraint firstItem="M1K-it-6T7" firstAttribute="leading" secondItem="TH7-4K-I06" secondAttribute="leading" constant="8" id="d7X-0I-gyA"/>
                             </constraints>
                         </view>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="55" id="3tZ-aH-JOO"/>
-                        </constraints>
                         <blurEffect style="light"/>
                     </visualEffectView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qVT-2M-kgd">
-                        <rect key="frame" x="16" y="11" width="100" height="100"/>
+                        <rect key="frame" x="16" y="11" width="95" height="95"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="100" id="i8z-lb-t8u"/>
-                            <constraint firstAttribute="height" constant="100" id="t1l-iw-98R"/>
+                            <constraint firstAttribute="width" constant="95" id="EVI-3U-1Eo"/>
+                            <constraint firstAttribute="width" secondItem="qVT-2M-kgd" secondAttribute="height" multiplier="1:1" id="R96-uZ-Brq"/>
                         </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="qVT-2M-kgd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="OUE-8p-Ufl"/>
+                    <constraint firstItem="qVT-2M-kgd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="7Bj-bP-fNU"/>
                     <constraint firstItem="kDr-SP-uD0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="OvV-QP-HjE"/>
                     <constraint firstItem="bCj-Fr-dMT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Wzb-3I-GMd"/>
-                    <constraint firstItem="qVT-2M-kgd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="XeV-cZ-ctz"/>
                     <constraint firstAttribute="bottom" secondItem="bCj-Fr-dMT" secondAttribute="bottom" id="ZAf-vb-Tmc"/>
                     <constraint firstAttribute="bottom" secondItem="kDr-SP-uD0" secondAttribute="bottom" id="blR-E7-t7z"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="qVT-2M-kgd" secondAttribute="trailing" constant="188" id="hQe-tW-frA"/>
+                    <constraint firstItem="bCj-Fr-dMT" firstAttribute="top" secondItem="qVT-2M-kgd" secondAttribute="bottom" constant="13" id="cBc-yZ-Ukl"/>
+                    <constraint firstItem="qVT-2M-kgd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="er6-Bm-IQA"/>
                     <constraint firstAttribute="trailing" secondItem="bCj-Fr-dMT" secondAttribute="trailing" id="n22-QQ-LNt"/>
-                    <constraint firstItem="bCj-Fr-dMT" firstAttribute="top" secondItem="qVT-2M-kgd" secondAttribute="bottom" constant="8" id="ui2-H1-roY"/>
                     <constraint firstAttribute="trailing" secondItem="kDr-SP-uD0" secondAttribute="trailing" id="vKO-WP-IpH"/>
                     <constraint firstItem="kDr-SP-uD0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zUO-1R-5tM"/>
                 </constraints>

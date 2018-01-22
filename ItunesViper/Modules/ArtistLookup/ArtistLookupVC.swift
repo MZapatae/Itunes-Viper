@@ -8,13 +8,17 @@
 
 import UIKit
 import PKHUD
+import AVFoundation
 
 class ArtistLookupVC: UIViewController {
   @IBOutlet weak var artistNameLabel: UILabel!
-  @IBOutlet weak var itunesMusicButton: UIButton!
   @IBOutlet weak var tableView: UITableView!
   
   var presenter: ArtistLookupPresentation!
+  
+  lazy var playerQueue : AVQueuePlayer = {
+    return AVQueuePlayer()
+  }()
   
   var tracks: [Track] = [] {
     didSet {
@@ -26,11 +30,17 @@ class ArtistLookupVC: UIViewController {
     super.viewDidLoad()
     presenter.viewDidLoad()
     tableView.dataSource = self
+    tableView.delegate = self
     tableView.register(TrackViewCell.self)
+  }
+  
+  @IBAction func openInAppleMusicAction(_ sender: Any) {
+    presenter.didPressAppleMusicButton()
   }
 }
 
 extension ArtistLookupVC: ArtistLookupView {
+  
   func showArtistInfo(_ artist: Artist) {
     artistNameLabel.text = artist.name
   }
@@ -52,6 +62,17 @@ extension ArtistLookupVC: ArtistLookupView {
     tableView.isHidden = true
   }
   
+  func playMusic(url: String) {
+    if playerQueue.rate == 0 {
+      let playerItem = AVPlayerItem(url: URL(string: url)!)
+      playerQueue.insert(playerItem, after: nil)
+      playerQueue.play()
+    } else {
+      playerQueue.pause()
+      playerQueue.removeAllItems()
+    }
+  }
+  
 }
 
 extension ArtistLookupVC: UITableViewDataSource {
@@ -64,4 +85,13 @@ extension ArtistLookupVC: UITableViewDataSource {
     cell.setupCellData(tracks[indexPath.row])
     return cell
   }
+}
+
+extension ArtistLookupVC: UITableViewDelegate {
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    presenter.didSelectTrack(tracks[indexPath.row])
+    tableView.deselectRow(at: indexPath, animated: true)
+  }
+  
 }

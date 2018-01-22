@@ -28,8 +28,13 @@ class ArtistLookupPresenter: ArtistLookupPresentation {
   }
   
   func didSelectTrack(_ track: Track) {
-    //code
+    view?.playMusic(url: track.previewUrl)
   }
+  
+  func didPressAppleMusicButton() {
+    router.presentWebView(url: selectedArtist.linkUrl)
+  }
+  
 }
 
 extension ArtistLookupPresenter: ArtistLookupInteractorOutput {
