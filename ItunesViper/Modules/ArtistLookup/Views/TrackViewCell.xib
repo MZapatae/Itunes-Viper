@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrackViewCell" customModule="ItunesViper" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackViewCell" rowHeight="175" id="KGk-i7-Jjw" customClass="TrackViewCell" customModule="ItunesViper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="174.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="disc-background" translatesAutoresizingMaskIntoConstraints="NO" id="kDr-SP-uD0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="174"/>
+                    </imageView>
+                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCj-Fr-dMT">
+                        <rect key="frame" x="0.0" y="119" width="320" height="55"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TH7-4K-I06">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1K-it-6T7">
+                                    <rect key="frame" x="8" y="0.0" width="304" height="28"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLw-Ke-QsE">
+                                    <rect key="frame" x="8" y="29" width="304" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20.5" id="8R8-Lo-s0o"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="bLw-Ke-QsE" firstAttribute="top" secondItem="M1K-it-6T7" secondAttribute="bottom" constant="1" id="0eE-ub-ljr"/>
+                                <constraint firstAttribute="trailing" secondItem="bLw-Ke-QsE" secondAttribute="trailing" constant="8" id="97A-Tf-UIO"/>
+                                <constraint firstAttribute="trailing" secondItem="M1K-it-6T7" secondAttribute="trailing" constant="8" id="CTv-dH-CCL"/>
+                                <constraint firstItem="bLw-Ke-QsE" firstAttribute="leading" secondItem="TH7-4K-I06" secondAttribute="leading" constant="8" id="J6K-cQ-V4t"/>
+                                <constraint firstItem="M1K-it-6T7" firstAttribute="top" secondItem="TH7-4K-I06" secondAttribute="top" id="UZK-nQ-who"/>
+                                <constraint firstAttribute="bottom" secondItem="bLw-Ke-QsE" secondAttribute="bottom" constant="5.5" id="VUN-xv-djk"/>
+                                <constraint firstItem="M1K-it-6T7" firstAttribute="leading" secondItem="TH7-4K-I06" secondAttribute="leading" constant="8" id="d7X-0I-gyA"/>
+                            </constraints>
+                        </view>
+                        <blurEffect style="light"/>
+                    </visualEffectView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qVT-2M-kgd">
+                        <rect key="frame" x="16" y="11" width="95" height="95"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="95" id="EVI-3U-1Eo"/>
+                            <constraint firstAttribute="width" secondItem="qVT-2M-kgd" secondAttribute="height" multiplier="1:1" id="R96-uZ-Brq"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qVT-2M-kgd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="7Bj-bP-fNU"/>
+                    <constraint firstItem="kDr-SP-uD0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="OvV-QP-HjE"/>
+                    <constraint firstItem="bCj-Fr-dMT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Wzb-3I-GMd"/>
+                    <constraint firstAttribute="bottom" secondItem="bCj-Fr-dMT" secondAttribute="bottom" id="ZAf-vb-Tmc"/>
+                    <constraint firstAttribute="bottom" secondItem="kDr-SP-uD0" secondAttribute="bottom" id="blR-E7-t7z"/>
+                    <constraint firstItem="bCj-Fr-dMT" firstAttribute="top" secondItem="qVT-2M-kgd" secondAttribute="bottom" constant="13" id="cBc-yZ-Ukl"/>
+                    <constraint firstItem="qVT-2M-kgd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="er6-Bm-IQA"/>
+                    <constraint firstAttribute="trailing" secondItem="bCj-Fr-dMT" secondAttribute="trailing" id="n22-QQ-LNt"/>
+                    <constraint firstAttribute="trailing" secondItem="kDr-SP-uD0" secondAttribute="trailing" id="vKO-WP-IpH"/>
+                    <constraint firstItem="kDr-SP-uD0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zUO-1R-5tM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="albumImage" destination="qVT-2M-kgd" id="c6Q-bN-wvE"/>
+                <outlet property="albumNameLabel" destination="bLw-Ke-QsE" id="j0h-yF-5IQ"/>
+                <outlet property="songNameLabel" destination="M1K-it-6T7" id="iJH-Ed-OrM"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="114.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="disc-background" width="1920" height="1200"/>
+    </resources>
+</document>

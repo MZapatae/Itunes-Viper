@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArtistSearchVC" customModule="ItunesViper" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="2xY-LO-Dk0" id="X7c-7e-JTG"/>
+                <outlet property="tableView" destination="0Ux-8j-aIo" id="GmZ-7Q-UT1"/>
+                <outlet property="view" destination="iN0-l3-epB" id="56m-9M-zlm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="Nombre artista..." translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xY-LO-Dk0">
+                    <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="XpX-IZ-lxt"/>
+                    </constraints>
+                    <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="55" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Ux-8j-aIo">
+                    <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="TBw-jK-PoE"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2xY-LO-Dk0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="0dc-qh-qZI"/>
+                <constraint firstItem="2xY-LO-Dk0" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="3gR-7s-aHd"/>
+                <constraint firstItem="0Ux-8j-aIo" firstAttribute="top" secondItem="2xY-LO-Dk0" secondAttribute="bottom" id="BQP-Yk-qGl"/>
+                <constraint firstItem="0Ux-8j-aIo" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="bTR-7B-TEg"/>
+                <constraint firstItem="0Ux-8j-aIo" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="e05-Jr-VRn"/>
+                <constraint firstItem="2xY-LO-Dk0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rX3-ob-7UF"/>
+                <constraint firstItem="0Ux-8j-aIo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xmw-Wp-T5g"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+</document>
