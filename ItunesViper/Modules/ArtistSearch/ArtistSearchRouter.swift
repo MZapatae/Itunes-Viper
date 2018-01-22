@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class ArtistSearchRouter: ArtistSearchWireframe {
   weak var viewController: UIViewController?
@@ -42,6 +43,11 @@ class ArtistSearchRouter: ArtistSearchWireframe {
     let alert = UIAlertController(title: "Alerta", message: "No encontramos resultados", preferredStyle: UIAlertControllerStyle.alert)
     alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
     viewController?.present(alert, animated: true, completion: nil)
+  }
+  
+  func presentWebView(url: String) {
+    let safariVC = SFSafariViewController(url: URL(string: url)!)
+    viewController?.present(safariVC, animated: true, completion: nil)
   }
   
 }

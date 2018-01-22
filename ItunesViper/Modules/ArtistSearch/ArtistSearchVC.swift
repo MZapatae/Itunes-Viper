@@ -24,6 +24,7 @@ class ArtistSearchVC: UIViewController {
     super.viewDidLoad()
     navigationItem.title = "Itunes Artistas"
     searchBar.delegate = self
+    tableView.delegate = self
     tableView.dataSource = self
     tableView.register(ArtistViewCell.self)
   }
@@ -54,6 +55,7 @@ extension ArtistSearchVC: UISearchBarDelegate {
   
   func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
     presenter.didSearchArtist(byName: searchBar.text ?? "")
+    searchBar.resignFirstResponder()
   }
   
 }
@@ -68,6 +70,15 @@ extension ArtistSearchVC: UITableViewDataSource {
     let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as ArtistViewCell
     cell.setupCellData(artists[indexPath.row])
     return cell
+  }
+  
+}
+
+extension ArtistSearchVC: UITableViewDelegate {
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    presenter.didSelectedArtist(artists[indexPath.row])
+    tableView.deselectRow(at: indexPath, animated: true)
   }
   
 }

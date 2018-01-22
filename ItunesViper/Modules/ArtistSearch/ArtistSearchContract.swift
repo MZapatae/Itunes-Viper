@@ -23,6 +23,7 @@ protocol ArtistSearchPresentation: class {
   var router: ArtistSearchWireframe! { get set }
   
   func didSearchArtist(byName query: String)
+  func didSelectedArtist(_ artist: Artist)
 }
 
 protocol ArtistSearchUsesCase: class {
@@ -41,6 +42,7 @@ protocol ArtistSearchWireframe: class {
   
   static func assembleModule() -> UIViewController
   
+  func presentWebView(url: String)
   func presentAlertDialog(message: String)
   func presentNoResultMessage()
 }
