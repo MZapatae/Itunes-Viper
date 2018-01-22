@@ -29,6 +29,10 @@ class ArtistSearchPresenter: ArtistSearchPresentation {
       router.presentAlertDialog(message: "Debe ingresar un artista a buscar")
     }
   }
+  
+  func didSelectedArtist(_ artist: Artist) {
+    router.presentWebView(url: artist.linkUrl)
+  }
 
 }
 
